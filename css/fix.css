@@ -7,8 +7,11 @@ table{height:100%;margin-bottom:0 !important;}
 .rer-logo{height:120px; float:left;margin-top:-15px;margin-left:-15px;}
 .rer-ligne{height:50px; float:left;margin-top:45px;margin-left:-15px;}
 .tr-header .td1 p{color:#000099;font-family:Verdana;font-weight:bold;font-size:28px;line-height: 17px;padding-left: 21px;margin-top:20px;}
-.td2-header{vertical-align:middle !important;background-color:#555b69;font-size:50px;color:white !important;font-weight:bold;text-align:right!important;}
+.td2-header{vertical-align:middle !important;background-color:#555b69;font-size:50px;color:white !important;font-weight:bold;text-align:right!important;width:20%;}
 .td2-header p{margin-top:10px;margin-right: 20px;text-align: center;margin-left: 20px;}
+#temp {font-size: 28px; line-height: 30px;margin-bottom: 0px; padding-bottom: 0px; text-align: center;}
+#temp p .low {color: blue;}
+#temp p .high {color: red;}
 .bg-tr{background-color:#d6dcd8;}
 .tr-normal{height:13%;max-height:13%;}
 .tr-normal td, .tr-trafic .tdfull{vertical-align:middle!important}

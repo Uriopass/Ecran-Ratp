@@ -13,8 +13,10 @@
       <table class="table">
         <tbody>
           <tr class="tr-header">
-            <td colspan="0" class="td2-header"><p><%= current_time %></p></td>
-            <td class="td1" colspan="2">
+            <td colspan="0" class="td2-header"><p id="time"><%= current_time %></p></td>
+            <td id="temp">
+            </td>
+            <td class="td1">
               <p>Station: <%= station %></p>
               <p style="font-size: 15px;"><%= traffic %></p>
             </td>
@@ -32,6 +34,7 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/underscore.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
