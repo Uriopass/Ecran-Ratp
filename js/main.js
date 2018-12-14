@@ -135,5 +135,5 @@ $(function() {
     };
 
     getData();
-    //setInterval(getData, 20000);
+    setInterval(getData, 20000);
 });
