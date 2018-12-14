@@ -26,9 +26,9 @@ $(function() {
 			async: false,
             success: function(weather) {
                 var html = "<p>";
+                html += "<span class='high'>" + weather.high + '&deg;' + weather.units.temp + '</span><br />';
 				html += weather.temp + '&deg;' + weather.units.temp + '<br />';
                 html += "<span class='low'>"  + weather.low  + '&deg;' + weather.units.temp + '</span><br />';
-                html += "<span class='high'>" + weather.high + '&deg;' + weather.units.temp + '</span><br />';
 				html += "</p>";
                 $("#temp").html(html);
             },
