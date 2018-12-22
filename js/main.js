@@ -122,9 +122,9 @@ $(function() {
             $("#time").css("color", "");
 
             console.log("day: " + day);
-            if (day == 4) {
+            if (day == 3) {
                 $("#time").css("color", "yellow");
-            } else if (day == 3 || day == 6) {
+            } else if (day == 2 || day == 5) {
                 $(".td2-header").css("background-color", "rgb(245, 245, 245)");
                 $("#time").css("color", "black");
             }
