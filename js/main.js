@@ -16,23 +16,32 @@ $(function() {
         return date;
 
     }
-
+	var rounds = 0;
+	var lastHtml = "";
 
     function get_temperature() {
-        $.simpleWeather({
-            location: 'Orsay, France',
-            woeid: '',
-            unit: 'c',
-			async: false,
+		if(rounds > 0) {
+			rounds -= 1;
+			 $("#temp").html(lastHtml);
+			 return;
+		}
+		
+        $.simplerWeather({
+            location: '48.699010,2.187860',
+			apikey: '28c47f61549b3c13c7948c51804d6a64',
+            units: 'c',
             success: function(weather) {
                 var html = "<p>";
-                html += "<span class='high'>" + weather.high + '&deg;' + weather.units.temp + '</span><br />';
-				html += weather.temp + '&deg;' + weather.units.temp + '<br />';
-                html += "<span class='low'>"  + weather.low  + '&deg;' + weather.units.temp + '</span><br />';
+                html += "<span class='high'>" + weather.high + '&deg;C</span><br />';
+				html += weather.temp + '&deg;C<br />';
+                html += "<span class='low'>"  + weather.low  + '&deg;C</span><br />';
 				html += "</p>";
+				lastHtml = html;
                 $("#temp").html(html);
+				rounds = 10;
             },
             error: function(error) {
+				rounds = 0;
             }
         });
     }
