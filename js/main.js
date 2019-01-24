@@ -74,7 +74,7 @@ $(function() {
 
                         var arrival_time = parse_message(element.message);
 
-                        var partir_dans = ((Math.floor((arrival_time - date) / 60000) - 9));
+                        var partir_dans = ((Math.floor((arrival_time - date) / 60000) - 10));
                         if (partir_dans < -4) {
                             if (partir_dans < -10) {
                                 element.temps = "Inconnu";
